@@ -5,10 +5,6 @@ main(int argc,char** argv)
     int sum=0;
     char tmp;
 	char x[]={'-','w'};
-	printf("%d\n",argc);
-    printf("%s\n",argv[0]);
-    printf("%s\n",argv[1]);
-    printf("%s\n",argv[2]);
     char str[20];
 
 
@@ -25,6 +21,7 @@ main(int argc,char** argv)
         sum++;
     }
     fclose(fp);
+    sum--;
     printf("出现的字符数 :  %d\n",sum);
     }
     else
